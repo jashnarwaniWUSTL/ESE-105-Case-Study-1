@@ -9,6 +9,6 @@ load COVIDbyCounty.mat
  %COVID_STLmetro = table2array(CNTY_CENSUS(:,'fips'))== 29183 & 29099 & 29071 & 29219 & 29113 & 17133 & 17119 & 17163 & 17083 & 17013 & 17117 & 17005 & 17027;
  %COVID_STLmetro = CNTY_CENSUS(COVID_STLmetro,:);
 
- index = find(table2array(CNTY_CENSUS(:,'fips'))>= 29510);
+ index = find(table2array(CNTY_CENSUS(:,'DIVISION')));
  COVID_data = CNTY_CENSUS(index,:);
 display(COVID_data);
